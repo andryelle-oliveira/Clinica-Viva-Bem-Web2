@@ -1,0 +1,95 @@
+/* login.css - Copie tudo abaixo e cole no seu arquivo */
+body {
+    background-color: #0b0f12; /* Cor escura do protótipo */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-card {
+    background-color: #1a1f24; /* Fundo do cartão central */
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.brand-icon {
+    color: #22c55e; /* Verde do ícone de coração */
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.input-container label {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; 
+    background-color: #0b0f12;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.btn-entrar {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #22c55e, #10b981); /* Botão verde degradê */
+    border: none;
+    border-radius: 8px;
+    color: #0b0f12;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.footer-text {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.footer-text a {
+    color: #22c55e;
+    text-decoration: none;
+}
