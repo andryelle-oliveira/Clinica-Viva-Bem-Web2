@@ -17,15 +17,15 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf(csrf -> csrf.disable()) // Desativa para facilitar os testes iniciais
+            .csrf(csrf -> csrf.disable()) 
             .authorizeHttpRequests(auth -> auth
-                // Libera o acesso à página de login e aos estilos (CSS/Imagens)
-                .requestMatchers("/login", "/css/**", "/js/**", "/images/**").permitAll()
+                // ADICIONAMOS "/esqueci-senha/**" NA LINHA ABAIXO:
+                .requestMatchers("/login", "/esqueci-senha/**", "/css/**", "/js/**", "/images/**").permitAll()
                 .anyRequest().authenticated()
             )
             .formLogin(form -> form
-                .loginPage("/login") // Diz ao Spring para usar a sua página bonita
-                .defaultSuccessUrl("/home", true) // Para onde vai depois de logar
+                .loginPage("/login") 
+                .defaultSuccessUrl("/home", true) 
                 .permitAll()
             )
             .logout(logout -> logout.permitAll());
@@ -35,8 +35,7 @@ public class SecurityConfig {
 
     @Bean
     public UserDetailsService userDetailsService() {
-        // Criando os usuários de demonstração que você colocou no HTML
-        
+        // Seus usuários de demonstração continuam iguais
         UserDetails paciente = User.withDefaultPasswordEncoder()
             .username("paciente@vivabem.com")
             .password("123456")

@@ -30,6 +30,22 @@
         .demo-accounts h4 { margin: 0 0 10px 0; color: #888; text-align: center; font-weight: normal; }
         .demo-item { margin-bottom: 8px; color: #adbac7; }
         .demo-item strong { color: #22c55e; }
+
+        /* Estilo para o link de esqueci senha */
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-size: 0.8rem;
+        }
+        .forgot-password a {
+            color: #888;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            color: #22c55e;
+        }
     </style>
 </head>
 <body>
@@ -64,6 +80,9 @@
                     <div class="input-box">
                         <i class="fas fa-lock"></i>
                         <input type="password" name="password" placeholder="********" required>
+                    </div>
+                    <div class="forgot-password">
+                        <a th:href="@{/esqueci-senha}">Esqueci minha senha?</a>
                     </div>
                 </div>
 
