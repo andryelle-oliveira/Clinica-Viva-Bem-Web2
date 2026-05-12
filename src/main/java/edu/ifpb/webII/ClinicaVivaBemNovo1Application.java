@@ -9,5 +9,4 @@ public class ClinicaVivaBemNovo1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(ClinicaVivaBemNovo1Application.class, args);
 	}
-
 }

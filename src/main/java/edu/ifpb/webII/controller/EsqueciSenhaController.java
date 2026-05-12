@@ -16,8 +16,17 @@ public class EsqueciSenhaController {
 
     @PostMapping("/esqueci-senha")
     public String processarEsqueciSenha(@RequestParam("email") String email, Model model) {
-        System.out.println("Solicitação para: " + email);
         model.addAttribute("mensagem", "Se o e-mail estiver cadastrado, você receberá um link.");
         return "esqueci-senha"; 
+    }
+
+    @GetMapping("/cadastro")
+    public String mostrarFormularioCadastro() {
+        return "cadastro"; 
+    }
+    
+    @GetMapping("/cadastro-clinica")
+    public String mostrarCadastroClinica() {
+        return "cadastro-clinica";
     }
 }

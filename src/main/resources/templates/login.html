@@ -56,7 +56,7 @@
             <a href="#">Início</a>
             <a href="#">Buscar Clínicas</a>
             <a href="#">Sobre</a>
-            <a href="#" style="border: 1px solid #444; padding: 5px 15px; border-radius: 5px;">Entrar</a>
+            <a th:href="@{/login}" style="border: 1px solid #444; padding: 5px 15px; border-radius: 5px;">Entrar</a>
         </div>
     </nav>
 
@@ -97,7 +97,7 @@
             </div>
 
             <div style="margin-top: 20px; font-size: 0.8rem; color: #888;">
-                Não tem uma conta? <a href="#" style="color: #22c55e; text-decoration: none;">Cadastre-se</a>
+                Não tem uma conta? <a th:href="@{/cadastro}" style="color: #22c55e; text-decoration: none; font-weight: bold;">Cadastre-se</a>
             </div>
         </div>
     </div>
